@@ -1,0 +1,128 @@
+Task Tracker CLI
+A simple command-line interface (CLI) application to help you track and manage your tasks. The application allows you to:
+
+Add, update, and delete tasks
+Mark tasks as "in progress" or "done"
+List tasks by different statuses (e.g., "todo", "in-progress", "done")
+The tasks are stored in a local JSON file, ensuring persistence even after the program exits.
+
+Features
+Add a new task
+Update an existing task
+Delete a task
+Mark a task as "in progress", "done", or "todo"
+List tasks by status (all, done, in-progress, or todo)
+Requirements
+Python 3.x
+No external libraries or frameworks (uses built-in Python modules)
+Installation
+Clone the repository:
+bash
+Copy
+Edit
+git clone https://github.com/yourusername/task-tracker-cli.git
+cd task-tracker-cli
+Ensure you have Python 3.x installed:
+bash
+Copy
+Edit
+python3 --version
+If you are using a virtual environment, activate it now:
+bash
+Copy
+Edit
+# On MacOS/Linux
+source venv/bin/activate
+
+# On Windows
+.\venv\Scripts\activate
+Run the project using:
+bash
+Copy
+Edit
+python task_tracker.py
+Usage
+Add a task
+To add a task, use the following command:
+
+bash
+Copy
+Edit
+python task_tracker.py add
+You'll be prompted to enter a task description. Example:
+
+arduino
+Copy
+Edit
+Enter task description: Clean room
+Task added successfully (ID: 1)
+Update a task
+To update a task, use the following command:
+
+bash
+Copy
+Edit
+python task_tracker.py update <task_id>
+Example:
+
+bash
+Copy
+Edit
+python task_tracker.py update 1 "Clean room and organize closet"
+Delete a task
+To delete a task, use:
+
+bash
+Copy
+Edit
+python task_tracker.py delete <task_id>
+Example:
+
+bash
+Copy
+Edit
+python task_tracker.py delete 1
+Mark a task
+To mark a task as "in progress", "done", or "todo", use the following commands:
+
+bash
+Copy
+Edit
+python task_tracker.py mark-in-progress <task_id>
+python task_tracker.py mark-done <task_id>
+python task_tracker.py mark-todo <task_id>
+List tasks
+To list all tasks:
+
+bash
+Copy
+Edit
+python task_tracker.py list
+To list tasks by status (done, todo, or in-progress):
+
+bash
+Copy
+Edit
+python task_tracker.py list done
+python task_tracker.py list todo
+python task_tracker.py list in-progress
+Task Properties
+Each task has the following properties:
+
+id: A unique identifier for the task
+description: A short description of the task
+status: The status of the task (todo, in-progress, done)
+createdAt: The date and time when the task was created
+updatedAt: The date and time when the task was last updated
+Example Output
+bash
+Copy
+Edit
+$ python task_tracker.py add
+Enter task description: Buy groceries
+Task added successfully (ID: 1)
+
+$ python task_tracker.py list
+ID: 1, Description: Buy groceries, Status: todo, CreatedAt: 2025-02-01 12:30:00, UpdatedAt: 2025-02-01 12:30:00
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
