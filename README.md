@@ -1,8 +1,8 @@
 Task Tracker CLI 🚀
-A simple command-line tool to track your tasks efficiently.
+A simple command-line tool to efficiently track your tasks.
 
 📖 Overview
-This Task Tracker CLI allows users to manage their tasks via the terminal. Users can add, update, delete, and list tasks, as well as mark them as to-do, in-progress, or done. Tasks are stored in a JSON file.
+The Task Tracker CLI allows users to manage their tasks via the terminal. Users can add, update, delete, and list tasks, as well as mark them as to-do, in-progress, or done. Tasks are stored in a JSON file for persistence.
 
 🎯 Features
 ✅ Add new tasks
@@ -11,20 +11,19 @@ This Task Tracker CLI allows users to manage their tasks via the terminal. Users
 ✅ List all tasks or filter by status
 
 🛠️ Installation & Setup
-1️⃣ Clone the repository
-
+1️⃣ Clone the Repository
 sh
 Copy
 Edit
 git clone https://github.com/XIUXIU25/task_tracker.git
 cd task_tracker
-2️⃣ Run the script
+2️⃣ Run the Script
 Make sure you have Python 3 installed. Run the command:
 
 sh
 Copy
 Edit
-python task_tracker.py <command> [arguments]
+python task_tracker.py [arguments]
 🚀 Usage
 Adding a Task
 sh
@@ -64,6 +63,6 @@ python task_tracker.py list todo
 python task_tracker.py list in-progress
 🛑 Error Handling
 If a task ID does not exist, the program will display an appropriate error message.
-If the JSON file is empty or corrupted, it will be reinitialized.
+If the JSON file is empty or corrupted, it will be reinitialized automatically.
 📜 License
 This project is licensed under the MIT License.
