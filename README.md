@@ -18,10 +18,40 @@ Tasks are stored in a JSON file for persistence.
 
 ## 🛠️ Installation & Setup  
 
-### 1️⃣ Clone the Repository  
+### Clone the Repository  
 ```sh
 git clone https://github.com/XIUXIU25/task_tracker.git
 cd task_tracker
 
-### 2 Run the Script
-https://roadmap.sh/projects/task-tracker
+### Run the Script
+Make sure you have Python 3 installed, then run:
+python task_tracker.py [arguments]
+
+🚀 Usage
+Adding a Task
+python task_tracker.py add
+
+Updating a Task
+python task_tracker.py update <task_id> "<new_description>"
+
+Deleting a Task
+python task_tracker.py delete <task_id>
+
+Marking a Task as Done or In Progress
+python task_tracker.py mark-done <task_id>
+python task_tracker.py mark-in-progress <task_id>
+
+Listing Tasks
+python task_tracker.py list
+
+Filter tasks by status:
+python task_tracker.py list done
+python task_tracker.py list todo
+python task_tracker.py list in-progress
+
+🛑 Error Handling
+If a task ID does not exist, an appropriate error message will be displayed.
+If the JSON file is empty or corrupted, it will be reinitialized automatically.
+
+📜 License
+This project is licensed under the MIT License.
