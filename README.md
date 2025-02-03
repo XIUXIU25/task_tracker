@@ -23,11 +23,11 @@ Tasks are stored in a JSON file for persistence.
 git clone https://github.com/XIUXIU25/task_tracker.git
 cd task_tracker
 
-### Run the Script
+###  Run the Script
 Make sure you have Python 3 installed, then run:
 python task_tracker.py [arguments]
 
-🚀 Usage
+### Usage
 Adding a Task
 python task_tracker.py add
 
@@ -49,9 +49,9 @@ python task_tracker.py list done
 python task_tracker.py list todo
 python task_tracker.py list in-progress
 
-🛑 Error Handling
+## Error Handling
 If a task ID does not exist, an appropriate error message will be displayed.
 If the JSON file is empty or corrupted, it will be reinitialized automatically.
 
-📜 License
+## License
 This project is licensed under the MIT License.
